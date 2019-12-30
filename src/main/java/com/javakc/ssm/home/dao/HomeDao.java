@@ -8,4 +8,6 @@ import java.util.Map;
 
 public interface HomeDao {
     public List<HomeEntity> queryByPage(Map<String,Object> map);
+
+    public long queryByCount(Map<String, Object> data);
 }

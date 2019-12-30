@@ -18,4 +18,9 @@ public class HomeServiceImpl implements HomeService {
     public List<HomeEntity> queryByPage(HomeEntity homeEntity, int start, int end) {
         return homeDao.queryByPage(null);
     }
+
+    @Override
+    public long queryByCount(HomeEntity homeEntity) {
+        return homeDao.queryByCount(null);
+    }
 }
