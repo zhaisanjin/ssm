@@ -41,7 +41,6 @@
         <table class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
-                <th><input type="checkbox" id="checkall"/></th>
                 <th>页面ID</th>
                 <th>页面名称</th>
                 <th>版本号</th>
@@ -57,15 +56,14 @@
             <c:set var="vs"></c:set>
             <c:forEach var="e" items="${page.list }" varStatus="v">
                 <tr>
-                    <td><input type="checkbox" name="ids" value="${e.dataId }"/></td>
-                    <td>${e.dataName }</td>
-                    <td>${e.dataType }</td>
-                    <td>${e.dataCode }</td>
-                    <td>${e.dataVal }</td>
-                    <td>${e.dataCommon }</td>
-                    <td>${e.dataName }</td>
-                    <td>${e.dataType }</td>
-                    <td>${e.dataCode }</td>
+                    <td>${e.home_id }</td>
+                    <td>${e.name }</td>
+                    <td>${e.version }</td>
+                    <td>${e.cdate }</td>
+                    <td>${e.udate }</td>
+                    <td>${e.channel }</td>
+                    <td>${e.otro }</td>
+                    <td>${e.status }</td>
                     <td><a>配置渠道</a><a>配置页面</a></td>
                 </tr>
             </c:forEach>
