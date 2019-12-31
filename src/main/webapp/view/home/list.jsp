@@ -1,3 +1,4 @@
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: HASEE
@@ -59,8 +60,8 @@
                     <td>${e.home_id }</td>
                     <td>${e.name }</td>
                     <td>${e.version }</td>
-                    <td>${e.cdate }</td>
-                    <td>${e.udate }</td>
+                    <td><f:formatDate value="${e.cdate}" pattern="yyyy-MM-dd"/></td>
+                    <td><f:formatDate value="${e.udate}" pattern="yyyy-MM-dd"/></td>
                     <td>${e.channel }</td>
                     <td>${e.otro }</td>
                     <td>${e.status }</td>
@@ -72,7 +73,7 @@
         <nav aria-label="Page navigation" style="text-align: center">
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-1" style="font-size: 15px">共有数据</div>
+                <div class="col-md-1" style="font-size: 15px">共有 ${page.count} 条数据</div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">1/1页</button></div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">尾页</button></div>
                 <div class="col-md-2">至<input type="text">页</div>

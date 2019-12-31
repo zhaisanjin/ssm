@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
@@ -18,8 +19,8 @@
     <link href="<%=path %>/static/css/animate.min.css" rel="stylesheet">
     <link href="<%=path %>/static/css/style.min.css?v=4.0.0" rel="stylesheet">
 </head>
-
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+${page.count}
 <div style="height: 100px">
     <div class="row">
         <div class="col-md-4"><span style="font-size: 50px">沃阅读后台管理</span></div>
@@ -33,7 +34,7 @@
         <div>
             <li><a href='#'><i class='fa fa-inbox'></i><span class='nav-label' style="font-size: 20px">页面管理</span><span class='fa arrow'></span></a>
                 <ul class='nav nav-second-level'>
-                    <li><a class='J_menuItem' href='index_v1.html'>Android首页管理</a></li>
+                    <li><a class='J_menuItem' href='home/query.do'>Android首页管理</a></li>
                     <li><a class='J_menuItem' href='index_v2.html'>频道管理</a></li>
                     <li><a class='J_menuItem' href='index_v1.html'>专题管理</a></li>
                     <li><a class='J_menuItem' href='index_v2.html'>专区管理</a></li>

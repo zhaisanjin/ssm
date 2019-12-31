@@ -20,6 +20,8 @@ public class HomeController {
         map.put("homeEntity",homeEntity);
         page.setCount(homeService.queryByCount(homeEntity));
         page.setList(homeService.queryByPage(homeEntity,page.getStart(),page.getEnd()));
-        return "index";
+        map.put("page",page);
+        return "view/home/list";
+//        555555555555555
     }
 }

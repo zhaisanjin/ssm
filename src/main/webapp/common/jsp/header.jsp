@@ -5,7 +5,7 @@ String path = request.getContextPath()+"/";
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib uri="http://shiro.apache.org/tags" prefix="shiro"%>
-<%@ taglib prefix="zhg" uri="www.javakc.com" %>
+<%--<%@ taglib prefix="zhg" uri="www.javakc.com" %>--%>
 
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <link rel="shortcut icon" href="favicon.ico">
