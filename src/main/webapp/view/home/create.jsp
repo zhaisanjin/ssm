@@ -26,7 +26,7 @@
     </ul>
 </div>
 <div style="margin-top: 10px">是否分渠道运营：
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="true">
         是
         <span class="caret"></span>
@@ -39,7 +39,7 @@
     渠道号：<input type="text">多渠道之间请用，隔开
 </div>
 <div style="margin-top: 10px">状态：
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="true">
         上线
         <span class="caret"></span>
