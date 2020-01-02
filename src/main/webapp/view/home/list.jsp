@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row" style="margin-top: 25px;font-size: 15px">
-        <div class="col-md-8"><a href="../view/home/create.jsp">添加页面</a></div>
+        <div class="col-md-8"><a href="<%=path%>/view/home/create.jsp">添加页面</a></div>
     </div>
     <div class="row" style="margin-top: 15px">
         <div class="col-md-4">页面名称：<input type="text"></div>
