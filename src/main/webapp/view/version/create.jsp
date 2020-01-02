@@ -12,28 +12,27 @@
     <%@ include file="../../common/jsp/header.jsp" %>
 </head>
 <body>
-    <form>
-        <div class="row" style="margin-top: 15px">
-        <div class="col-md-12" style="margin-top: 10px">平台：
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="true">
-                android
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">PC</a></li>
-            </ul>
-        </div>
-        <div class="col-md-12" style="margin-top: 25px">
+    <form href="${path}/version/create">
+        <table style="margin-top: 25px">
+            <tr>
+                <td>平台：</td>
+                <td>
+                    <select name="">
+                        <option value="1">PC</option>
+                        <option value="2">Android</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div style="margin-top: 25px">
             页面版本：<input type="text">
         </div>
-        <div class="col-md-12" style="margin-top: 25px">
+        <div style="margin-top: 25px">
             客户端版本：<input type="text">
         </div>
         <div class="row" style="margin-top: 25px">
             <div class="col-md-1" style="margin-left: 25px"><input class="btn btn-default" type="submit" value="提交"></div>
             <div class="col-md-1"><input class="btn btn-default" type="button" value="返回"></div>
-        </div>
         </div>
     </form>
 </body>

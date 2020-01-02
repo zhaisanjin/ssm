@@ -18,28 +18,24 @@
         <div class="col-md-8"><a href='${path}/CMS/view/version/create.jsp'>添加版本</a></div>
     </div>
     <div class="row" style="margin-top: 15px">
-        <div class="col-md-2">平台：
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="true">
-                全部
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">PC</a></li>
-                <li><a href="#">android</a></li>
-            </ul>
-        </div>
-        <div class="col-md-2">客户端版本号：
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="true">
-                全部
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
+        <table style="margin-top: 25px">
+            <tr>
+                <td>平台：</td>
+                <td>
+                    <select name="">
+                        <option value="1">PC</option>
+                        <option value="2">Android</option>
+                    </select>
+                </td>
+                <td>客户端版本号：</td>
+                <td>
+                    <select name="">
+                        <option value="1">PC</option>
+                        <option value="2">Android</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="row" style="margin-top: 15px">
         <div class="col-md-10">
