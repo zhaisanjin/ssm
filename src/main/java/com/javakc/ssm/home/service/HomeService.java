@@ -9,4 +9,6 @@ public interface HomeService {
     public List<HomeEntity> queryByPage(HomeEntity homeEntity,int start,int end);
 
     public long queryByCount(HomeEntity homeEntity);
+
+    public int insert(HomeEntity homeEntity);
 }
