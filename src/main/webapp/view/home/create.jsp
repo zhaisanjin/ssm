@@ -13,7 +13,7 @@
 </head>
 <body>
 <form>
-    <div class="row" style="margin-top: 15px">
+    <div class="row" style="margin-top: 15px;margin-left: 30px">
         <div style="margin-top: 25px">
             页面名称：<input type="text" value="推荐">
         </div>
