@@ -6,6 +6,7 @@ import com.javakc.ssm.home.service.HomeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -22,6 +23,12 @@ public class HomeController {
         page.setList(homeService.queryByPage(homeEntity,page.getStart(),page.getEnd()));
         map.put("page",page);
         return "view/home/list";
-//        555555555555555
     }
+
+    @PostMapping("create")
+    public String create(HomeEntity homeEntity){
+        homeService.insert(homeEntity);
+        return "redirect:query.do";
+    }
+
 }

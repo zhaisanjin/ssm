@@ -9,4 +9,9 @@
     <select id="queryByCount" resultType="long">
         select count(1) from cms_home
     </select>
+
+    <insert id="insert" parameterType="homeEntity">
+        insert into cms_home(home_id,name,version,cdate,channel,otro,status) values
+        (#{home_id},#{name},#{version},#{cdate},#{channel},#{otro},#{status})
+    </insert>
 </mapper>
