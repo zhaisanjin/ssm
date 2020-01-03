@@ -56,14 +56,14 @@
             <tbody>
             <c:set var="vs"></c:set>
                 <tr>
-                    <td><a>修改属性</a>  <a>配置栏目</a></td>
+
                 </tr>
             </tbody>
         </table>
         <nav aria-label="Page navigation" style="text-align: center">
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-1" style="font-size: 15px">共有 ${page.count} 条数据</div>
+                <div class="col-md-1" style="font-size: 15px">共有  条数据</div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">1/1页</button></div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">尾页</button></div>
                 <div class="col-md-2">至<input type="text">页</div>
