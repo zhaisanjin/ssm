@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-md-1" style="margin-left: 25px"><input class="btn btn-default" type="submit" value="提交">
             </div>
-            <div class="col-md-1"><input class="btn btn-default" type="button" value="返回"></div>
+            <div class="col-md-1"><input class="btn btn-default" type="button" value="返回" onclick="javascript :history.back(-1)"></div>
         </div>
     </div>
 </form>
