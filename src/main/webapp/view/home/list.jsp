@@ -65,7 +65,7 @@
                     <td>${e.channel }</td>
                     <td>${e.otro }</td>
                     <td>${e.status }</td>
-                    <td><a>配置渠道</a>  <a href="<%=path%>/view/home/config.jsp">配置页面</a></td>
+                    <td><a>配置渠道</a>  <a href="<%=path%>">配置页面</a></td>
                 </tr>
             </c:forEach>
             </tbody>
