@@ -15,11 +15,12 @@
 <body>
 <div class="wrapper wrapper-content animated fadeInRight">
     <div class="row" style="margin-top: 25px;font-size: 15px">
-        <div class="col-md-8"><a href="<%=path%>/view/home/create.jsp">添加页面</a></div>
+        <div class="col-md-1"><a href="<%=path%>/view/home/create.jsp">公告配置</a></div>
+        <div class="col-md-1"><a href="<%=path%>/view/home/create.jsp">返回</a></div>
     </div>
     <div class="row" style="margin-top: 15px">
-        <div class="col-md-4">页面名称：<input type="text"></div>
-        <div class="col-md-4">版本号：<input type="text"></div>
+        <div class="col-md-4">栏目ID：<input type="text"></div>
+        <div class="col-md-4">关键字：<input type="text"></div>
     </div>
     <div class="row" style="margin-top: 15px">
         <div class="col-md-10">
@@ -42,13 +43,12 @@
         <table class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
-                <th>页面ID</th>
-                <th>页面名称</th>
-                <th>版本号</th>
+                <th>栏目ID</th>
+                <th>前台显示标题</th>
+                <th>栏目名称</th>
                 <th>添加日期</th>
                 <th>修改日期</th>
-                <th>是否分渠道运营</th>
-                <th>渠道号</th>
+                <th>是否显示更多</th>
                 <th>状态</th>
                 <th>操作</th>
             </tr>
@@ -65,7 +65,7 @@
                     <td>${e.channel }</td>
                     <td>${e.otro }</td>
                     <td>${e.status }</td>
-                    <td><a>配置渠道</a>  <a href="<%=path%>/view/home/config.jsp">配置页面</a></td>
+                    <td><a>修改属性</a>  <a>配置栏目</a></td>
                 </tr>
             </c:forEach>
             </tbody>
