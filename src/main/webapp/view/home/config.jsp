@@ -55,19 +55,9 @@
             </thead>
             <tbody>
             <c:set var="vs"></c:set>
-            <c:forEach var="e" items="${page.list }" varStatus="v">
                 <tr>
-                    <td>${e.home_id }</td>
-                    <td>${e.name }</td>
-                    <td>${e.version }</td>
-                    <td><f:formatDate value="${e.cdate}" pattern="yyyy-MM-dd"/></td>
-                    <td><f:formatDate value="${e.udate}" pattern="yyyy-MM-dd"/></td>
-                    <td>${e.channel }</td>
-                    <td>${e.otro }</td>
-                    <td>${e.status }</td>
                     <td><a>修改属性</a>  <a>配置栏目</a></td>
                 </tr>
-            </c:forEach>
             </tbody>
         </table>
         <nav aria-label="Page navigation" style="text-align: center">
