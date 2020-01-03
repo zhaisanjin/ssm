@@ -56,7 +56,7 @@
             </thead>
             <tbody>
             <c:set var="vs"></c:set>
-            <c:forEach var="e" items="" varStatus="v">
+            <c:forEach var="e" items="${page.list}" varStatus="v">
                 <tr>
                     <td>${e.home_id }</td>
                     <td>${e.name }</td>
@@ -74,7 +74,7 @@
         <nav aria-label="Page navigation" style="text-align: center">
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-1" style="font-size: 15px">共有 0 条数据</div>
+                <div class="col-md-1" style="font-size: 15px">共有 ${page.count} 条数据</div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">1/1页</button></div>
                 <div class="col-md-1" style="font-size: 15px"><button class="btn btn-default" type="submit">尾页</button></div>
                 <div class="col-md-2">至<input type="text">页</div>
