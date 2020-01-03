@@ -29,6 +29,5 @@ public class VersionController {
         versionEntity.setCdate(new Date());
         versionService.create(versionEntity);
         return "redirect:query.do";
-
     }
 }

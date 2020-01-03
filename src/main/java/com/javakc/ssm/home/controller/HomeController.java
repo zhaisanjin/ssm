@@ -21,7 +21,6 @@ public class HomeController {
         map.put("homeEntity",homeEntity);
         page.setCount(homeService.queryByCount(homeEntity));
         page.setList(homeService.queryByPage(homeEntity,page.getStart(),page.getEnd()));
-        map.put("page",page);
         return "view/home/list";
     }
 

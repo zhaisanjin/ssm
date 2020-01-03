@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--
+        spring-mvc中只负责扫描表现层实现，避免与spring-mybatis中重复扫描出现事务失效问题
+    -->
+    <context:component-scan base-package="com.javakc.ssm" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--
+        启用mvc注解支持，参数收集，转json
+    -->
+
+    <mvc:annotation-driven/>
+
+    <!--
+        视图解析器
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!--设置文件上传配置-->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--默认编码-->
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!--文件最大限制-->
+        <property name="maxUploadSize" value="104857600"/>
+        <!--每次读取数量-->
+        <property name="maxInMemorySize" value="40960"/>
+    </bean>
+
+    <!--读取ssm.properties配置文件-->
+<!--    <utils:properties id="properties" location="classpath:ssm.properties"/>-->
+</beans>
