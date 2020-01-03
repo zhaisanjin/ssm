@@ -15,4 +15,14 @@ public class VersionServiceImpl implements VersionService {
     public List<VersionEntity> query(VersionEntity versionEntity) {
         return versionDao.query(versionEntity);
     }
+
+    @Override
+    public void create(VersionEntity versionEntity) {
+        versionDao.create(versionEntity);
+    }
+
+    @Override
+    public long querycount(VersionEntity versionEntity) {
+        return versionDao.querycount(versionEntity);
+    }
 }
