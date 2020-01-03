@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface VersionService {
     public List<VersionEntity> query(VersionEntity versionEntity);
+    public void create(VersionEntity versionEntity);
+    public long querycount(VersionEntity versionEntity);
 }

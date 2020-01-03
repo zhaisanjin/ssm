@@ -17,6 +17,7 @@ public class SpecialController {
     public String query(SpecialEntity specialEntity, ModelMap map, Page<SpecialEntity> page){
         map.put("SpecialEntity",specialEntity);
         page.setList(specialService.querybypage(specialEntity,page.getStart(),page.getEnd()));
+        page.setCount(0);
         return "view/special/list";
     }
 }
