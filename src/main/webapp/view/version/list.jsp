@@ -1,3 +1,4 @@
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: HASEE
@@ -22,14 +23,14 @@
             <tr>
                 <td>平台：</td>
                 <td>
-                    <select name="">
+                    <select name="platform">
                         <option value="1">PC</option>
                         <option value="2">Android</option>
                     </select>
                 </td>
                 <td>客户端版本号：</td>
                 <td>
-                    <select name="">
+                    <select name="user_version">
                         <option value="1">PC</option>
                         <option value="2">Android</option>
                     </select>
@@ -60,7 +61,7 @@
                     <td>${e.platform }</td>
                     <td>${e.page_version }</td>
                     <td>${e.user_version }</td>
-                    <td>${e.cdate }</td>
+                    <td><f:formatDate value="${e.cdate}" pattern="yyyy-MM-dd"/></td>
                     <td><div class="row">
                         <div></div>
                     </div></td>
@@ -71,7 +72,7 @@
         <nav aria-label="Page navigation" style="text-align: center">
             <div class="row">
                 <div class="col-md-2"></div>
-                <div class="col-md-1" style="font-size: 15px">共有数据${page.count }</div>
+                <div class="col-md-1" style="font-size: 15px">共有数据${page.count }条</div>
                 <div class="col-md-1" style="font-size: 15px">
                     <button class="btn btn-default" type="submit">1/1页</button>
                 </div>
@@ -91,7 +92,9 @@
     </form>
 </div>
 <script>
-
+    function () {
+        
+    }
 </script>
 </body>
 </html>
